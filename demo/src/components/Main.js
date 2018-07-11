@@ -14,7 +14,12 @@ class Main extends Component {
   render() {
     return (
       <div>
-        主页面
+        <p>主页面</p>
+        <ul>
+          <li>
+            <Link to='/accountinfo'>账户信息</Link>
+          </li>
+        </ul>
       </div>
     );
   }

@@ -9,8 +9,8 @@ class RouterMap extends React.Component {
         return (
         	<BrowserRouter>
         		<Switch>
-	        		<Route exact path='/' component={Main}></Route>
-	        		<Route path='/accountinfo' component={AccountInfo}></Route>
+	        		<Route exact={true} path='/' component={Main}></Route>
+	        		<Route exact={false} path='/accountinfo' component={AccountInfo}></Route>
         		</Switch>
         	</BrowserRouter>
         )

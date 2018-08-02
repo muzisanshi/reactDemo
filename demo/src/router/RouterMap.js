@@ -5,7 +5,7 @@ import Main from '../components/Main'
 import AccountInfo from '../components/AccountInfo'
 
 class RouterMap extends React.Component {
-	render() {  
+	render() {
         return (
         	<BrowserRouter>
         		<Switch>

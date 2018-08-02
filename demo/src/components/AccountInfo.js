@@ -22,9 +22,10 @@ class AccountInfo extends Component {
       		<li><Link to='/accountinfo/one'>页面1</Link></li>
       		<li><Link to='/accountinfo/two'>页面2</Link></li>
       		<li><Link to='/accountinfo/three'>页面3</Link></li>
+          <Route path='/accountinfo/Two' component={Two}></Route>
+          <Route path='/accountinfo/Three' component={Three}></Route>
       		<Route path='/accountinfo/one' component={One}></Route>
-      		<Route path='/accountinfo/Two' component={Two}></Route>
-      		<Route path='/accountinfo/Three' component={Three}></Route>
+      		
       	</ul>
       </div>
     );

@@ -11,13 +11,19 @@ import {BrowserRouter,withRouter,Link,Route,Switch} from 'react-router-dom';
 import '../App.css';
 
 class One extends Component {
-  render() {
-    return (
-      <div>
-        <p>页面1</p>
-      </div>
-    );
-  }
+
+  	constructor(props){
+  		super(props);
+  		
+  	}
+
+	render() {
+	    return (
+	      <div>
+	        <p>页面1</p>
+	      </div>
+	    );
+	}
 }
 
 export default One;

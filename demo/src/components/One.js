@@ -14,13 +14,39 @@ class One extends Component {
 
   	constructor(props){
   		super(props);
-  		
+  		this.click = this.click.bind(this);
+  		this.change = this.change.bind(this);
+
+  		// this.click.bind(this);
+  		// this.change.bind(this);
+
+  		this.state = {
+  			state1:"state1"
+  		};
+  	}
+
+  	click(e){
+  		this.setState({
+  			state1:"state1111111"
+  		});
+  	}
+
+  	change(e){
+  		this.setState({
+  			state1:"fuck"
+  		});
   	}
 
 	render() {
 	    return (
 	      <div>
-	        <p>页面1</p>
+	        <p>{this.state.state1}</p>
+	        <button onClick={this.click}>改变</button>
+	        <input
+	            id="new-todo"
+	            onChange={this.change}
+	            value={this.state.state1}
+	        />
 	      </div>
 	    );
 	}

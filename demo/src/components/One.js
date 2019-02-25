@@ -30,7 +30,7 @@ class One extends Component {
   			state1:"state1111111"
   		});
   	}
-
+    
   	change(e){
   		this.setState({
   			state1:"fuck"
